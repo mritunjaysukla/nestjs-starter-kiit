@@ -1,10 +1,17 @@
 {
   "name": "nestjs-starter-kit",
-  "version": "0.0.1",
-  "description": "",
-  "author": "",
-  "private": true,
-  "license": "UNLICENSED",
+  "version": "1.0.0",
+  "description": "A powerful NestJS starter kit with authentication, email service, password reset, logging, swagger docs and CLI scaffolding.",
+  "author": "Mritunjay Sukla <mritunjaysukla07@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mritunjaysukla/nestjs-starter-kit.git"
+  },
+  "homepage": "https://github.com/mritunjaysukla/nestjs-starter-kit#readme",
+  "bugs": {
+    "url": "https://github.com/mritunjaysukla/nestjs-starter-kit/issues"
+  },
   "scripts": {
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\"",
@@ -27,6 +34,15 @@
       "eslint --fix"
     ]
   },
+  "files": [
+    "dist",
+    "src",
+    "scripts",
+    "templates",
+    ".eslintrc.js",
+    ".prettierrc",
+    "README.md"
+  ],
   "dependencies": {
     "@nestjs/bull": "^11.0.2",
     "@nestjs/common": "^11.0.1",
