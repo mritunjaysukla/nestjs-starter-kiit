@@ -37,6 +37,7 @@ async function bootstrap() {
   app.useGlobalGuards(new RolesGuard(reflector));
   app.useGlobalPipes(new ValidationPipe({ whitelist: true }));
 
+  // Fix: Properly type the DocumentBuilder
   const config = new DocumentBuilder()
     .setTitle('NestJS Starter Kit')
     .setDescription('Production-ready NestJS starter API')
@@ -50,6 +51,6 @@ async function bootstrap() {
   await app.listen(port);
 }
 
-bootstrap().catch((err) => {
+bootstrap().catch((err: unknown) => {
   console.error('Failed to start app', err);
 });
