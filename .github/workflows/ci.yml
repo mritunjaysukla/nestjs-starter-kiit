@@ -28,7 +28,7 @@ jobs:
         run: yarn install --frozen-lockfile
 
       - name: Run lint
-        run: yarn lint
+        run: yarn lint --ext .ts src 
 
       - name: Run unit tests
         run: yarn test
