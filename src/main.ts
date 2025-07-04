@@ -3,7 +3,7 @@ import { AppModule } from './app.module';
 import { RolesGuard } from './common/guards/roles.guard';
 import { Reflector } from '@nestjs/core';
 import { ValidationPipe } from '@nestjs/common';
-import { SwaggerModule, DocumentBuilder, OpenAPIObject } from '@nestjs/swagger';
+import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
 import { WinstonModule } from 'nest-winston';
 import * as winston from 'winston';
 import { ResponseInterceptor } from './common/interceptors/response.interceptor';
@@ -44,7 +44,7 @@ async function bootstrap(): Promise<void> {
     .setVersion('1.0')
     .build();
 
-  const document: OpenAPIObject = SwaggerModule.createDocument(app, config);
+  const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('api', app, document);
 
   const port: number = process.env.PORT ? Number(process.env.PORT) : 3000;

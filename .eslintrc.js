@@ -9,6 +9,7 @@ module.exports = {
   extends: [
     'eslint:recommended',
     '@typescript-eslint/recommended',
+    '@typescript-eslint/recommended-requiring-type-checking',
     'plugin:prettier/recommended',
   ],
   env: {
@@ -22,7 +23,7 @@ module.exports = {
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
 
-    // Completely disable all unsafe rules
+    // Disable unsafe rules for decorator libraries
     '@typescript-eslint/no-unsafe-assignment': 'off',
     '@typescript-eslint/no-unsafe-call': 'off',
     '@typescript-eslint/no-unsafe-member-access': 'off',
