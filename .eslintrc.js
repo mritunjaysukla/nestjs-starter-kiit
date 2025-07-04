@@ -34,9 +34,7 @@ module.exports = {
     '*.js',
     '*.d.ts',
     'coverage/',
-    '.eslintrc.js',
-    '**/*.spec.ts',
-    '.github/', // ✅ Exclude entire .github folder
+    '**/*.spec.ts'
   ],
   root: true,
 };
