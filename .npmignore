@@ -1,0 +1,12 @@
+node_modules/
+src/tests/
+test/
+dist/tmp/
+.env
+*.log
+*.local
+.vscode/
+.git/
+.gitignore
+Dockerfile
+README.dev.md
