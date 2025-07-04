@@ -1,6 +1,6 @@
 {
-  "name": "nestjs-starter-kit",
-  "version": "1.0.0",
+  "name": "nestjs-starter-kiit",
+  "version": "1.1.0",
   "description": "A powerful NestJS starter kit with authentication, email service, password reset, logging, swagger docs and CLI scaffolding.",
   "author": "Mritunjay Sukla <mritunjaysukla07@gmail.com>",
   "license": "MIT",

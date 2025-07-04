@@ -1,10 +1,17 @@
-# 🚀 NestJS Starter Kit
+# 🚀 NestJS Starter Kiit
 
-[![npm version](https://img.shields.io/npm/v/nestjs-starter-kit.svg)](https://www.npmjs.com/package/nestjs-starter-kit)  
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![npm version](https://img.shields.io/npm/v/nestjs-starter-kiit)](https://www.npmjs.com/package/nestjs-starter-kiit)
+[![License](https://img.shields.io/npm/l/nestjs-starter-kiit)](https://github.com/mritunjaysukla/nestjs-starter-kit/blob/main/LICENSE)
+[![Build Status](https://github.com/mritunjaysukla/nestjs-starter-kit/actions/workflows/ci.yml/badge.svg)](https://github.com/mritunjaysukla/nestjs-starter-kit/actions/workflows/ci.yml)
+[![Downloads](https://img.shields.io/npm/dm/nestjs-starter-kiit)](https://www.npmjs.com/package/nestjs-starter-kiit)
 
-A **batteries-included**, **production-ready** starter kit for building backend APIs with NestJS.  
-Designed to boost your productivity with authentication, email services, logging, swagger docs, and much more!
+---
+
+## GitHub Repository
+
+You can find the full source code and documentation on GitHub:
+
+➡️ [nestjs-starter-kit GitHub repo](https://github.com/mritunjaysukla/nestjs-starter-kit)
 
 ---
 
