@@ -12,7 +12,7 @@ export interface ResponseFormat<T> {
 export class ResponseInterceptor<T> implements NestInterceptor<T, ResponseFormat<T>> {
   intercept(context: ExecutionContext, next: CallHandler): Observable<ResponseFormat<T>> {
     return next.handle().pipe(
-      map((data) => ({
+      map((data: T) => ({
         status: 'success',
         data,
       })),

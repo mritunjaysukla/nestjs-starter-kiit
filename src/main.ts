@@ -17,11 +17,11 @@ async function bootstrap() {
             winston.format.timestamp(),
             winston.format.colorize(),
             winston.format.printf(({ timestamp, level, message }) => {
-              return `${timestamp} [${level}]: ${message}`;
+              // Convert all parts to string explicitly to avoid unknown types
+              return `${String(timestamp)} [${String(level)}]: ${String(message)}`;
             }),
           ),
         }),
-        // Optionally, add file transports:
         new winston.transports.File({
           filename: 'logs/error.log',
           level: 'error',
@@ -30,6 +30,7 @@ async function bootstrap() {
       ],
     }),
   });
+
   const reflector = app.get(Reflector);
 
   app.useGlobalInterceptors(new ResponseInterceptor());
@@ -41,9 +42,14 @@ async function bootstrap() {
     .setDescription('Production-ready NestJS starter API')
     .setVersion('1.0')
     .build();
+
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('api', app, document);
 
-  await app.listen(process.env.PORT || 3000);
+  const port = process.env.PORT ? Number(process.env.PORT) : 3000;
+  await app.listen(port);
 }
-bootstrap();
+
+bootstrap().catch((err) => {
+  console.error('Failed to start app', err);
+});
