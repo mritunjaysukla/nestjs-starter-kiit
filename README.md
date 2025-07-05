@@ -1,8 +1,8 @@
 # 🚀 NestJS Starter Kiit
 
 [![npm version](https://img.shields.io/npm/v/nestjs-starter-kiit)](https://www.npmjs.com/package/nestjs-starter-kiit)
-[![License](https://img.shields.io/npm/l/nestjs-starter-kiit)](https://github.com/mritunjaysukla/nestjs-starter-kit/blob/main/LICENSE)
-[![Build Status](https://github.com/mritunjaysukla/nestjs-starter-kit/actions/workflows/ci.yml/badge.svg)](https://github.com/mritunjaysukla/nestjs-starter-kit/actions/workflows/ci.yml)
+[![License](https://img.shields.io/npm/l/nestjs-starter-kiit)](https://github.com/mritunjaysukla/nestjs-starter-kiit/blob/main/LICENSE)
+[![Build Status](https://github.com/mritunjaysukla/nestjs-starter-kiit/actions/workflows/ci.yml/badge.svg)](https://github.com/mritunjaysukla/nestjs-starter-kiit/actions/workflows/ci.yml)
 [![Downloads](https://img.shields.io/npm/dm/nestjs-starter-kiit)](https://www.npmjs.com/package/nestjs-starter-kiit)
 
 ---
@@ -11,7 +11,7 @@
 
 You can find the full source code and documentation on GitHub:
 
-➡️ [nestjs-starter-kit GitHub repo](https://github.com/mritunjaysukla/nestjs-starter-kit)
+➡️ [nestjs-starter-kit GitHub repo](https://github.com/mritunjaysukla/nestjs-starter-kiit)
 
 ---
 
@@ -34,6 +34,6 @@ You can find the full source code and documentation on GitHub:
 ### 1. Install
 
 ```bash
-npm install nestjs-starter-kit
+npm install nestjs-starter-kiit
 # or
-yarn add nestjs-starter-kit
+yarn add nestjs-starter-kiit
